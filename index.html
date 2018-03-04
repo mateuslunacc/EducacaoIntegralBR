@@ -32,7 +32,8 @@ div.tooltip {
 
 <svg width="1000" height="600"></svg>
 
-<h4>- Aparentemente há uma concentração maior de alunos matriculados em tempo integral na região Sul/Suldeste do país. Algumas regiões do norte também se destacam mais em números absolutos há pouca expressividade.</h4>
+<h4>- Aparentemente há uma concentração maior de alunos matriculados em tempo integral na região Sul/Suldeste do país. </h4>
+<h4> Algumas regiões do norte também se destacam mas em números absolutos há pouca expressividade.</h4>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 <script src="https://d3js.org/topojson.v2.min.js"></script>
@@ -102,7 +103,7 @@ function showTooltip(d) {
   moveTooltip();
 
   tooltip.style("display","block")
-      .text(d.properties.Cidade + ": " + d.properties["Crescimento entre 2011 e 2013 (pp*)"] + "%");
+      .text(d.properties.Localidade + ": " + d.properties["2014 (%)"] + "%");
 }
 
 //Move the tooltip to track the mouse
